@@ -1,0 +1,110 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.rightItems {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  padding: 0 40px;
+}
+
+.cartItems {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hero {
+  background-image: url('https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 8px 20px;
+  font-size: 25px;
+  border-radius: 30px;
+}
+
+.trendingBox img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.trendingBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.toysection button {
+  font-size: 15px;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Responsive styles for smartphones */
+
+@media (max-width: 480px) {
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .trendingBox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .hero {
+    padding: 0 30px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+}
